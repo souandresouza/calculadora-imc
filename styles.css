@@ -1,0 +1,117 @@
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #1e3c72, #2a5298); /* Gradiente suave */
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(44, 58, 71, 0.8); /* Fundo translúcido */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px #2f3640;
+    padding: 30px 25px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4cd137; /* Cor vibrante para o título */
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+input {
+    width: 70%;
+    background: #555;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda mais suave */
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #000;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    background: #fff;
+    border-color: #2ccf1d;
+    box-shadow: 0 0 8px rgba(97, 255, 110, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container button {
+    flex: 1;
+    margin: 0 5px;
+    background: #3b5bdb; /* Azul vibrante */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px; /* Aumenta o espaçamento horizontal */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-container button:hover {
+    background: #2a4bbb; /* Azul mais escuro no hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#result.show {
+    opacity: 1;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    .button-container button {
+        font-size: 0.9rem;
+    }
+}
