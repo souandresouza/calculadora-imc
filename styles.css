@@ -42,7 +42,7 @@ input {
     border-radius: 8px;
     padding: 12px;
     font-size: 1rem;
-    color: #00ff00;
+    color: #000;
     outline: none;
     transition: all 0.3s ease;
     margin-bottom: 15px;
@@ -83,12 +83,9 @@ input:focus {
 
 #result {
     margin-top: 20px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #00ff00;
-    text-transform: capitalize;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
 }
 
 #result.show {
