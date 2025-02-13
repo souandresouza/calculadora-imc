@@ -85,7 +85,7 @@ input:focus {
     margin-top: 20px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #fff;
+    color: #00ff00;
     text-transform: capitalize;
     opacity: 0;
     transition: opacity 0.5s ease;
